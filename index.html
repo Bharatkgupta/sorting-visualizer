@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sorting Visualizer</title>
+    <meta name="author" content="Bharat Kumar Gupta">
+    <meta name="description" content="Visualizing Sorting algorithms.">
+    <link rel="icon" href="icons/bars.svg">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <button id="newarray" class="abtn" type="button">New array</button>
+        </div>
+
+        <div>
+            <label for="arr_sz">Array Size : <span id="array_size">50</span></label>
+            <input id="arr_sz" class="slider" type="range" min=10 max=100 step=10 value=50 oninput="showarr(this.value)"
+                onchange="showarr(this.value)">
+        </div>
+        <div>
+            <label for="sort_sp">Sort Speed : <span id="speed">1</span>x</label>
+            <input id="sort_sp" class="slider" type="range" min=0.25 max=2 step=0.25 value=1
+                oninput="showsp(this.value)" onchange="showsp(this.value)">
+        </div>
+
+        <div class="sort-btn">
+            <button id="bubble" class="sbtn" type="button">Bubble Sort</button>
+            <button id="insertion" class="sbtn" type="button">Insertion Sort</button>
+            <button id="merge" class="sbtn" type="button">Merge Sort</button>
+            <button id="quick" class="sbtn" type="button">Quick Sort</button>
+            <button id="selection" class="sbtn" type="button">Selection Sort</button>
+        </div>
+
+        <div class="git">
+            <a href=""><img src="icons/GitHub-Mark-32px.png" title="Git Repo" alt="sort-visualizer"></a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <h1>Sorting Visualizer</h1>
+
+        <div id="bars"></div>
+    </div>
+
+    <script src="sorting.js"></script>
+</body>
+
+</html>

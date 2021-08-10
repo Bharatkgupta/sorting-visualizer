@@ -1,0 +1,137 @@
+html,
+body {
+    background-color: #212F3C;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #95A5A6;
+    overflow-x: hidden;
+    padding-top: 5vh;
+    display: block;
+}
+
+
+nav:hover {
+    background-color: rgb(176, 206, 207);
+}
+
+nav div {
+    text-decoration: none;
+    font-size: large;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.sort-btn button,
+.abtn {
+    background-color: #148F77;
+    border: 1px solid green;
+    color: #afc8ca;
+    padding: auto;
+    cursor: pointer;
+    height: 3rem;
+    width: 100%;
+    display: block;
+    font-size: larger;
+}
+
+.sort-btn button:not(:last-child) {
+    border-bottom: none;
+}
+
+.sort-btn button:hover,
+.abtn:hover {
+    background-color: green;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 12px;
+    border-radius: 5px;
+    background: #212F3C;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 1rem auto;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #148F77;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #148F77;
+    cursor: pointer;
+}
+
+.main {
+    height: 100%;
+    width: 82%;
+    margin-left: 18%;
+    position: fixed;
+}
+
+h1 {
+    color: #95A5A6;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1:hover {
+    color: rgb(176, 206, 207);
+}
+
+.git {
+    margin-top: 4rem;
+}
+
+img {
+    display: block;
+    cursor: pointer;
+    margin: auto;
+}
+
+#bars {
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 0.5rem solid #148F77;
+    height: 75%;
+    width: 80%;
+    margin: auto;
+    align-items: baseline;
+    padding-bottom: 5px;
+}
+
+#bars div {
+    box-sizing: border-box;
+    background-color: #95A5A6;
+    margin: 2px;
+}
+
+#bars div:hover {
+    background-color: rgb(176, 206, 207)
+}
