@@ -1,2 +1,2 @@
 # sorting-visualizer
-See Sorting Graphically
+See Sorting algorithms work graphically
