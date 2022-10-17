@@ -148,7 +148,7 @@ async function selectionSort() {
                 normalbar(j);
             }
         }
-        await swap(arr, min_idx, i);
+        await swap(min_idx, i);
         greenbar(i);
         await delay(100);
     }
